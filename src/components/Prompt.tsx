@@ -12,7 +12,7 @@ export default function Prompt() {
     const [schema, setSchema] = useState('{\n\t"type": "object", \n\t"properties": {}, \n\t"required": []\n}')
     const [model, setModel] = useState('gemini-2.5-flash')
     const [prompt, setPrompt] = useState('')
-    const [apiKey, setApiKey] = useState('AIzaSyB2W2bz6nZuLtYfaiMpOwqNOAI-fAH_CTo')
+    const [apiKey, setApiKey] = useState('')
     const [temperature, setTemperature] = useState(0.4)
     const [maxTokens, setMaxTokens] = useState(19334)
     const [reasoningEfforts, setReasoningEfforts] = useState('disable')
