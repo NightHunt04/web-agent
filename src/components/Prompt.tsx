@@ -17,7 +17,7 @@ export default function Prompt() {
     const [maxTokens, setMaxTokens] = useState(19334)
     const [reasoningEfforts, setReasoningEfforts] = useState('disable')
     const [waitBetweenActions, setWaitBetweenActions] = useState(0)
-    const [showVid, setShowVid] = useState(false)
+    const [showVid, setShowVid] = useState(true)
     const videos = ['/assets/v1.mp4', '/assets/v2.mp4']
 
     const handleEnded = () => {
