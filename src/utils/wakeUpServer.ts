@@ -10,7 +10,7 @@ export async function wakeUpServer() {
     try {
         const res = await axios.get<Response>(import.meta.env.VITE_BACKEND_HOST)
 
-        if (res.data.status === 'ok' && res.data.browser_instances?.['https://playwright-browser-instance-1.onrender.com/'] === 'Running' && res.data.browser_instances?.['https://playwright-browser-instance.onrender.com/'] === 'Running') {
+        if (res.data.status === 'ok' && res.data.browser_instances?.['https://playwright-browser-instance.onrender.com/'] === 'Running') {
             return { success: true, message: "Server is running and ready" }
         }
 
